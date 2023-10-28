@@ -36,10 +36,9 @@ showImage(ImageIndex);
 startAutomaticSlide();
 
 /////////////////////////////////////
-
 function initMap() {
     var map = new google.maps.Map(document.getElementById('mapa'), {
-        center: { lat: 37.7749, lng: -122.4194 }, // Coordenadas del mapa
+        center: { lat: -31.414663, lng: -64.190439 }, // Coordenadas de "Chacabuco 300, Córdoba, Argentina"
         zoom: 15, // Nivel de zoom
     });
 }

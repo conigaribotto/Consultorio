@@ -80,7 +80,7 @@ a {
 
 /*SERVICIOSSSSSSSSSSSSS*/
 #servicios {
-    background-color: #c9e4ee;
+    background-color: #f3f9fc;
     padding: 20px;
     text-align: center;
 }
@@ -96,11 +96,22 @@ table {
     border-spacing: 10px;
 }
 
+
 table td {
     border: 1px solid #2e809b;
     padding: 10px;
     border-radius: 10px;
     margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+td:hover {
+    transform: translate(5px, -5px);
+    color: #2e809b;
+}
+
+table a {
+    color: black;
 }
 
 table h3 {
@@ -115,7 +126,7 @@ table p {
 
 /*RESULTADOSSSSSS*/
 #resultados {
-    background-color: #f2f2f2;
+    background-color: #c9e4ee;
     padding: 20px;
     text-align: center;
 }
@@ -161,4 +172,12 @@ table p {
     flex: 1;
     height: 400px;
     /* Ajusta la altura del mapa según tus necesidades */
+}
+
+/*FOOOOOOTERRR*/
+footer {
+    background-color: #2e809b;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
 }
