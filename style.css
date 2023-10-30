@@ -24,14 +24,14 @@ video {
     z-index: 0;
 }
 
-h2,
+h1,
 nav,
 .text-abajo {
     position: absolute;
     font-family: 'Montserrat', sans-serif;
 }
 
-h2 {
+h1 {
     top: 8px;
     left: 10px;
     z-index: 1;
@@ -120,6 +120,7 @@ table td {
     border-radius: 10px;
     margin: 10px;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 td:hover {
@@ -143,9 +144,80 @@ table p {
     color: #0f255c;
 }
 
-/*RESULTADOSSSSSS
-
-
+/*RESULTADOSSSSSS*/
+.controls {
+    width: 42px;
+    height: 42px;
+    padding: 10px;
+    border-radius: 0;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+}
+.controls img {
+width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
+height: auto; /* Ajustar la altura automáticamente */
+}
+.left {
+    position: absolute;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+margin-left: -50px;
+}
+.right {
+    position: absolute;
+top: 50%;
+right: 0;
+transform: translateY(-50%);
+margin-right: -70px; /
+}
+.carrousel {
+    width: 1100px;
+    margin: auto;
+    height: 450px;
+    margin-top: 120px;
+    overflow:hidden;
+}
+.controls:hover {
+    background-color: rgba(0,0,0,.5);
+}
+.item {
+    width: 335px;
+    height: 400px;
+    float: left;
+    margin-left: 15px;
+    margin-top: 20px;
+    background-color: #202225;
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+  transition: 1s all;
+    /*box-shadow: 0 9px 10px rgba(6,6,7,.3);*/
+}
+.cont {
+    position: absolute;
+    width: 1100px;
+    margin-top: 190px;
+}
+.tapa {
+  width: 12000px;/* 	change if the size is >     12000  :) */
+    transition: .9s all;
+}
+.item img {
+width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
+height: 100%; /* Ajustar la altura automáticamente para mantener la proporción */
+margin: 0; /* Eliminar cualquier margen por defecto */
+display: block; /* Cambiar a "block" para ajustar el ancho y el margen automáticamente */
+position: auto;
+top: 50%;
+left: 0;
+}
+.item:hover {
+    margin-top: -6px;
+}
 /*FORMULARIOOOOOOOOOOOOOOOO*/
 .formulario {
     position: relative;

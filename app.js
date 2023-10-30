@@ -1,54 +1,32 @@
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const images = document.querySelectorAll('.carousel img');
+let x = 0;
+let p = -10;
+let i = 1;
+let doom = document.getElementsByClassName('item');
+let confr = (doom.length - 3) * (-350);
+let confl = 0;
 
-let ImageIndex = 0;
-let automaticSlideInterval; // variable para hacerlo automático
+// Botón izquierdo
+document.getElementById("l").addEventListener("click", function () {
+    x += 350;
+    if (x > confl) {
+        x = confr - 350;
+    } else {
+        document.getElementById("move").style.marginLeft = x + "px";
+    }
+});
 
-function showImage(index) {
-    images.forEach((image, i) => {
-        if (i === index) {
-            image.style.display = 'block';
-        } else {
-            image.style.display = 'none';
-        }
-    });
-}
+// Botón derecho
+document.getElementById("r").addEventListener("click", function () {
+    x += -350;
+    p += -10;
+    if (x < confr) {
+        x = 350;
+    } else {
+        document.getElementById("move").style.marginLeft = x + "px";
+    }
+});
 
-function nextImage() {
-    ImageIndex = (ImageIndex + 1) % images.length;
-    showImage(ImageIndex);
-}
-
-function prevImage() {
-    ImageIndex = (ImageIndex - 1 + images.length) % images.length;
-    showImage(ImageIndex);
-}
-
-// Función para cambiar automáticamente las imágenes cada 2 segundos
-function startAutomaticSlide() {
-    automaticSlideInterval = setInterval(() => {
-        nextImage();
-    }, 2000);
-}
-
-showImage(ImageIndex);
-startAutomaticSlide();
-////////////////////CARRUSEL
-let next = document.querySelector('.next')
-let prev = document.querySelector('.prev')
-
-next.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').appendChild(items[0])
-})
-
-prev.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
-})
-
-//////////FORMULARIO
+////////FORMULARIO
 const inputs = document.querySelectorAll(".input");
 
 function focusFunc() {
