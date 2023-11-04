@@ -10,33 +10,27 @@
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="img/logo1-removebg-preview.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Manual de uso.pdf - Google Chrome 10_29_2023 5_21_32 PM.png"
+        type="image/x-icon">
     <title>PURADENTAL</title>
 </head>
 
 <body>
     <header class="hero">
-        <h1><a href="index.html"><i class="icon"></i> PURADENTAL</a></h1>
-        <nav>
-            <ul>
-                <!-- <li><a href="#">Nosotros</a></li>-->
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="Contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <p class="text-abajo">El propósito de "Pura Dental" es proporcionar atención dental de alta calidad, centrada en
-            la innovación y el beneficio de los pacientes. Su diferenciación radica en la calidad, la experiencia y la
-            preocupación por el bienestar de los pacientes. Los profesionales se destacan por su capacidad de
-            comunicación y atención personalizada. La misión de "Pura Dental" es brindar servicios odontológicos
-            integrales y de alta calidad para la satisfacción de los pacientes. Buscan ser referentes en excelencia y
-            compromiso, destacando valores como liderazgo, trabajo en equipo, innovación y respeto.</p>
-        <video muted autoplay loop>
-            <source src="img/pexels-c-technical-6502559 (2160p).mp4" type="video/mp4">
-        </video>
+        <div class="hero-content"> <!-- Nuevo contenedor para el video y el menú -->
+            <i class="icon-left-top"></i> <!-- Elemento para el ícono -->
+            <video muted autoplay loop>
+                <source src="img/pexels-c-technical-6502559 (2160p).mp4" type="video/mp4">
+            </video>
+            <menu class="menu">
+                <a href="servicios">Servicios</a>
+                <a href="Contacto.html">Contacto</a>
+            </menu>
+        </div>
     </header>
-
+    
     <!--SERVICIIIIIIIIIIIIIIIOS-->
-    <div id="servicios">
+    <div id="servicios" class="servicios">
         <h3>SERVICIOS</h3>
         <table>
             <tr>
@@ -73,20 +67,23 @@
     <!--Resultadosssssssssssssss-->
     <div class="carrousel">
         <div class="tapa" id="move">
-          <div class="item"><img src="img/header.jpg"></div>
-          <div class="item"><img src="img/smile-1431565.jpg"></div>
-          <div class="item"><img src="img/1.jpg"></div>
-          <div class="item"><img src="img/header.jpg"></div>
-          <div class="item"><img src="img/header.jpg"></div>
-          <div class="item"><img src="img/smile-1431565.jpg"></div>
-          <div class="item"><img src="img/1.jpg"></div>
-          <div class="item"><img src="img/header.jpg"></div>
+            <div class="item"><img src="img/header.jpg"></div>
+            <div class="item"><img src="img/smile-1431565.jpg"></div>
+            <div class="item"><img src="img/1.jpg"></div>
+            <div class="item"><img src="img/header.jpg"></div>
+            <div class="item"><img src="img/header.jpg"></div>
+            <div class="item"><img src="img/smile-1431565.jpg"></div>
+            <div class="item"><img src="img/1.jpg"></div>
+            <div class="item"><img src="img/header.jpg"></div>
             <!-- Otras imágenes aquí -->
         </div>
         <!-- Controles -->
         <div class="cont">
-            <div class="left controls" id="l"><img src="https://cdn2.iconfinder.com/data/icons/electronic-line-3/64/back_Arrow_chevron_left_ui_interface_icon-512.png"></div>
-            <div class="right controls" id="r"><img src="https://cdn1.iconfinder.com/data/icons/mixed-17/16/icon_right_rounded-512.png"></div>
+            <div class="left controls" id="l"><img
+                    src="https://cdn2.iconfinder.com/data/icons/electronic-line-3/64/back_Arrow_chevron_left_ui_interface_icon-512.png">
+            </div>
+            <div class="right controls" id="r"><img
+                    src="https://cdn1.iconfinder.com/data/icons/mixed-17/16/icon_right_rounded-512.png"></div>
         </div>
     </div>
     <!--FORMULARIOOOO-->
@@ -95,10 +92,13 @@
         <img src="img/shape.png" class="square" alt="" />
         <div class="form">
             <div class="contact-info">
-                <h3 class="title">Let's get in touch</h3>
+                <h3 class="title">Contactanos</h3>
                 <p class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                    dolorum adipisci recusandae praesentium dicta!
+                    Nuestra misión es brindar servicio odontológico integral 
+                    y especializado de calidad con profesionales de alto 
+                    nivel comprometidos con el cuidado de la salud bucal 
+                    para lograr la satisfacción y fidelización de nuestros 
+                    pacientes
                 </p>
 
                 <div class="info">
@@ -138,9 +138,29 @@
             <div class="contact-form">
                 <span class="circle one"></span>
                 <span class="circle two"></span>
+                <div class="phone-info">
+                    <h4>Mandanos un mensaje</h4>
+                </div>
+                <div class="whatsapp-button">
+                    <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank">Odontologa Carla Fergola</a>
+                </div>
+                <div class="whatsapp-button">
+                    <a href="https://api.whatsapp.com/send?phone=123456789" target="_blank">Odontologa Noseelnomnbre</a>
+                </div>
+                <div class="opening-hours">
+                    <h4>Horarios</h4>
+                    <p>Lunes: 9:00 AM - 6:00 PM</p>
+                    <p>Martes: 9:00 AM - 6:00 PM</p>
+                    <p>Miercoles: 9:00 AM - 6:00 PM</p>
+                    <p>Jueves: 9:00 AM - 6:00 PM</p>
+                    <p>Viernes: 9:00 AM - 6:00 PM</p>
+                    <p>Sabado: 9:00 AM - 6:00 PM</p>
+                    <p>Domingo: 9:00 AM - 6:00 PM</p>
+                </div>
             </div>
         </div>
     </div>
+
     <!--FOOOTERRRRRRRRRRRR-->
     <footer>
         <div id="contenedor">

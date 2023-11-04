@@ -9,12 +9,16 @@
 
 body {
     background-color: #f5f8fa;
+    background-size: cover; 
 }
 
 .hero {
     position: relative;
     overflow: hidden;
     min-height: 100vh;
+}
+.hero-content {
+    position: relative;
 }
 
 video {
@@ -24,73 +28,40 @@ video {
     z-index: 0;
 }
 
-h1,
-nav,
-.text-abajo {
-    position: absolute;
-    font-family: 'Montserrat', sans-serif;
-}
-
 h1 {
+    position: absolute;
     top: 8px;
     left: 10px;
     z-index: 1;
+    font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-style: bold;
 }
-
-.icon {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background: url('img/logo2-removebg-preview.png') no-repeat center center;
+.icon-left-top {
+    position: absolute;
+    top: -10px; 
+    left: -100px; 
+    width: 420px; 
+    height: 100px; 
+    background: url('img/Manual_de_uso.pdf_and_1_more_page_-_Coni_-_Microsoft__Edge_11_4_2023_6_01_59_PM-removebg-preview.png') no-repeat center center; /* Ruta a tu imagen de ícono */
     background-size: cover;
-    vertical-align: middle;
-    /* Alinea verticalmente el icono */
-    margin-right: -15px;
+    z-index: 2; 
 }
 
-nav {
-    top: 20px;
+
+.menu {
+    position: absolute; 
+    top: 20px; 
     right: 20px;
     font-size: 18px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-li {
-    display: inline;
-    margin-right: 20px;
 }
 
 a {
     color: #fff;
     text-decoration: none;
-}
-
-.text-abajo {
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    top: 150px;
-    left: 20px;
-    max-width: 50%;
-    margin-left: 10px;
-}
-
-@media (max-width: 768px) {
-    .text-abajo {
-        max-width: 50%;
-        /* En pantallas pequeñas, ocupa todo el ancho */
-        margin-left: 0;
-        /* Sin margen izquierdo en pantallas pequeñas */
-    }
+    display: inline;
+    margin-right: 20px;
+    top: -10px; 
 }
 
 
@@ -151,36 +122,44 @@ table p {
     padding: 10px;
     border-radius: 0;
     cursor: pointer;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
+
 .controls img {
-width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
-height: auto; /* Ajustar la altura automáticamente */
+    width: 100%;
+    /* Ajustar el ancho de las imágenes al 100% del contenedor */
+    height: auto;
+    /* Ajustar la altura automáticamente */
 }
+
 .left {
     position: absolute;
-top: 50%;
-left: 0;
-transform: translateY(-50%);
-margin-left: -50px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: -50px;
 }
+
 .right {
     position: absolute;
-top: 50%;
-right: 0;
-transform: translateY(-50%);
-margin-right: -70px; /
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-right: -70px;/
 }
+
 .carrousel {
     width: 1100px;
     margin: auto;
     height: 450px;
     margin-top: 120px;
-    overflow:hidden;
+    overflow: hidden;
 }
+
 .controls:hover {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
 }
+
 .item {
     width: 335px;
     height: 400px;
@@ -194,30 +173,40 @@ margin-right: -70px; /
     padding-top: 30px;
     border-radius: 5px;
     cursor: pointer;
-  transition: 1s all;
+    transition: 1s all;
     /*box-shadow: 0 9px 10px rgba(6,6,7,.3);*/
 }
+
 .cont {
     position: absolute;
     width: 1100px;
     margin-top: 190px;
 }
+
 .tapa {
-  width: 12000px;/* 	change if the size is >     12000  :) */
+    width: 12000px;
+    /* 	change if the size is >     12000  :) */
     transition: .9s all;
 }
+
 .item img {
-width: 100%; /* Ajustar el ancho de las imágenes al 100% del contenedor */
-height: 100%; /* Ajustar la altura automáticamente para mantener la proporción */
-margin: 0; /* Eliminar cualquier margen por defecto */
-display: block; /* Cambiar a "block" para ajustar el ancho y el margen automáticamente */
-position: auto;
-top: 50%;
-left: 0;
+    width: 100%;
+    /* Ajustar el ancho de las imágenes al 100% del contenedor */
+    height: 100%;
+    /* Ajustar la altura automáticamente para mantener la proporción */
+    margin: 0;
+    /* Eliminar cualquier margen por defecto */
+    display: block;
+    /* Cambiar a "block" para ajustar el ancho y el margen automáticamente */
+    position: auto;
+    top: 50%;
+    left: 0;
 }
+
 .item:hover {
     margin-top: -6px;
 }
+
 /*FORMULARIOOOOOOOOOOOOOOOO*/
 .formulario {
     position: relative;
@@ -234,46 +223,34 @@ left: 0;
 .form {
     width: 100%;
     max-width: 820px;
-    background-color: #0D4C92;
+    background-color: #AED8CC;
+
     border-radius: 10px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    margin: 0 auto;
     overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-
 .contact-form {
-    background-color: #0D4C92;
+    background-color: #1D5B79;
+    position: relative;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-items: left; /* Centra horizontalmente el contenido */
+    justify-content: center;
+    padding: 2.3rem 2.2rem;
     position: relative;
 }
 
-.circle {
-    border-radius: 50%;
-    background: linear-gradient(135deg, transparent 20%, #59C1BD);
-    position: absolute;
-}
 
-.circle.one {
-    width: 130px;
-    height: 130px;
-    top: 130px;
-    right: -40px;
-}
-
-.circle.two {
-    width: 80px;
-    height: 80px;
-    top: 10px;
-    right: 30px;
-}
 
 .contact-form:before {
     content: "";
     position: absolute;
     width: 26px;
     height: 26px;
-    background-color: #59C1BD;
+    background-color: #1D5B79;
     transform: rotate(45deg);
     top: 50px;
     left: -13px;
@@ -327,20 +304,52 @@ textarea.input {
 }
 
 .contact-info .title {
-    color: #59C1BD;
+    color: #1D5B79;
 }
 
 .text {
-    color: #59C1BD;
+    color: #1D5B79;
     margin: 1.5rem 0 2rem 0;
 }
 
 .information {
     display: flex;
-    color: #59C1BD;
+    color: #1D5B79;
     margin: 0.7rem 0;
     align-items: center;
     font-size: 0.95rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.phone-info,
+.whatsapp-button,
+.opening-hours {
+    margin: 10px 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #59C1BD;
+}
+
+.whatsapp-button a {
+    background-color: #59C1BD;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button a:hover {
+    background-color: #A0E4CB;
 }
 
 .icons {
@@ -353,7 +362,7 @@ textarea.input {
 }
 
 .social-media p {
-    color: #59C1BD;
+    color: #1D5B79;
 }
 
 .social-icons {
@@ -378,37 +387,6 @@ textarea.input {
 }
 
 
-.big-circle {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: linear-gradient(to bottom, #CFF5E7, #59C1BD);
-    bottom: 50%;
-    right: 50%;
-    transform: translate(-40%, 38%);
-}
-
-.big-circle:after {
-    content: "";
-    position: absolute;
-    width: 360px;
-    height: 360px;
-    background-color: #fafafa;
-    border-radius: 50%;
-    top: calc(50% - 180px);
-    left: calc(50% - 180px);
-}
-
-.square {
-    position: absolute;
-    height: 400px;
-    top: 50%;
-    left: 50%;
-    transform: translate(181%, 11%);
-    opacity: 0.2;
-}
-
 @media (max-width: 850px) {
     .form {
         grid-template-columns: 1fr;
@@ -427,17 +405,6 @@ textarea.input {
         right: 70px;
     }
 
-    .square {
-        transform: translate(140%, 43%);
-        height: 350px;
-    }
-
-    .big-circle {
-        bottom: 75%;
-        transform: scale(0.9) translate(-40%, 30%);
-        right: 50%;
-    }
-
     .text {
         margin: 1rem 0 1.5rem 0;
     }
@@ -453,11 +420,6 @@ textarea.input {
     }
 
     .contact-info:before {
-        display: none;
-    }
-
-    .square,
-    .big-circle {
         display: none;
     }
 
@@ -484,7 +446,8 @@ textarea.input {
 
     .icon {
         width: 23px;
-    }}
+    }
+}
 
 
 /*FOOOOOOTERRR*/
@@ -492,7 +455,7 @@ textarea.input {
 #contenedor {
     display: flex;
     align-items: center;
-    background-color: #0D4C92;
+    background-color: #1D5B79;
     color: #fafafa;
 }
 
@@ -523,9 +486,11 @@ footer {
 
 footer p {
     margin-top: 30px;
-} 
-
-footer h5{
-    margin-top: 30px;
-    color: #0D4C92;;
 }
+
+footer h5 {
+    margin-top: 30px;
+    color: #1D5B79;
+    ;
+}
+
